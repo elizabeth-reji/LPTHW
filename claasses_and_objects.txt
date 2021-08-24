@@ -1,0 +1,43 @@
+TextIOWrapper {
+  name
+  mode
+  encoding
+}
+
+Person
+{
+  name
+  age
+  height
+
+  display()
+
+  make_old()
+}
+
+e = Person {
+  name = "Elizabeth"
+  age = 25
+  height = 162
+}
+
+
+m = Person {
+  name = "Manish"
+  age = 32
+  height = 172
+}
+
+e.name
+m.name
+
+f"{name} is {age} years old and {height} tall"
+
+e.display()
+Elizabeth is 25 years old and 162 tall
+
+m.display()
+Manish is 32 years old and 172 tall
+m.make_old()
+m.display()
+e.display()

@@ -1,0 +1,24 @@
+script:
+  A file that contains some code. Code can be in python or other languages.
+
+function:
+  Group of lines of code that can be called multiple times. Reasons why:
+    - By making a group of lines, you can give it a name that makes it easy to
+    remember and read later.
+    - You can also avoid repetition.
+
+parameters and arguments:
+    ```
+1.  def dummy_function(p1, p2):
+2.      ....
+
+5.  number = 10
+6.  dummy_function(number, "hello")
+    ```
+  In the above code snippet, p1 and p2 are parameters. number and "hello" are
+  arguments.
+
+  variables in function definition are called parameters.
+  variables or values used when calling a function are called arguments.
+  dummy_function takes two parameters p1 and p2. (Line 1)
+  dummy_function is being passed two arguments number and "hello". (Line 5)
