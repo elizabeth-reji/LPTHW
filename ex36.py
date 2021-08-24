@@ -33,18 +33,21 @@ def gold_room():
     print("Well how much do you take...???")
 
     choice = input("> ")
+    choice = choice.strip()
 
-    if "0" in choice or "1" in choice:
-        how_much = int(choice)
-    else:
-        dead("Man, learn to type a number.")
+    digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    for character in choice:
+        if character not in digits:
+            dead("Man, learn to type a number.")
 
-    if how_much < 100:
+    how_much = int(choice)
+
+    if how_much < 101:
         print("""
         Nice, you're not greedy, you win!🎊
         🎊🎊🥳🥳🎊🎊🤩🤩🎊🎊
         """)
-        exit()
+        exit(0)
     else:
         dead("You greedy bastard!")
 
@@ -220,7 +223,8 @@ def room_cerberus():
                room_giant_baby()
 
 
-def dead():
+def dead(message):
+    print(message)
     print("Maybe next time try to make better decisions🤔.")
     exit()
 
